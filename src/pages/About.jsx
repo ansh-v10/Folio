@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePic from '../assets/profile_picture.jpg';
 export default function About() {
   const skills = [
     {
@@ -75,11 +76,16 @@ export default function About() {
           <div className="profile-avatar-container">
             <div className="profile-avatar-glow"></div>
             <div className="profile-avatar">
-              {/* Premium abstract tech logo / avatar representation */}
-              <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="12" cy="10" r="2" fill="var(--accent-light)" />
-              </svg>
+              <img 
+                src={profilePic} 
+                alt="Ansh Verma profile" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover', 
+                  borderRadius: '50%' 
+                }} 
+              />
             </div>
           </div>
           

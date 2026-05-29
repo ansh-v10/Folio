@@ -30,7 +30,7 @@ export default function Footer() {
           fontSize: '0.9rem',
           fontFamily: 'var(--font-body)'
         }}>
-          &copy; {currentYear} <span style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', fontWeight: 600 }}>ArcAngel Dev</span>. All rights reserved.
+          &copy; {currentYear} <span style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', fontWeight: 600 }}>ArcAngel Devs</span>. All rights reserved.
         </p>
 
         {/* Social Icons inside Footer */}
