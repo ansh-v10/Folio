@@ -212,31 +212,6 @@ function AntigravityCanvas() {
 
 export default function Home() {
   const navigate = useNavigate();
-  const [rightVisible, setRightVisible] = useState(false);
-  const rightRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setRightVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.05 }
-    );
-
-    const currentRef = rightRef.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
-  }, []);
 
   const handleScrollDown = () => {
     window.scrollTo({
@@ -313,10 +288,7 @@ export default function Home() {
         </div>
 
         {/* Right Side: Pixel Art cozy workspace */}
-        <div 
-          ref={rightRef} 
-          className={`retro-right ${rightVisible ? 'slide-active' : ''}`}
-        >
+        <div className="retro-right">
           <div className="retro-image-container">
             <img 
               src={cozyDesk} 
