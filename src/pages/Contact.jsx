@@ -45,11 +45,32 @@ export default function Contact() {
     e.preventDefault();
     if (validate()) {
       setIsSubmitting(true);
-      // Simulate API submission
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-      }, 1200);
+      fetch('https://formspree.io/f/xqejnvdq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+        .then((res) => {
+          setIsSubmitting(false);
+          if (res.ok) {
+            setIsSubmitted(true);
+          } else {
+            setErrors((prev) => ({
+              ...prev,
+              submit: 'Failed to send message. Please try again.'
+            }));
+          }
+        })
+        .catch(() => {
+          setIsSubmitting(false);
+          setErrors((prev) => ({
+            ...prev,
+            submit: 'A network error occurred. Please try again.'
+          }));
+        });
     }
   };
   return (
@@ -105,6 +126,11 @@ export default function Contact() {
               />
               {errors.message && <span className="error-text">{errors.message}</span>}
             </div>
+            {errors.submit && (
+              <span className="error-text" style={{ display: 'block', marginBottom: '12px', textAlign: 'center' }}>
+                {errors.submit}
+              </span>
+            )}
             <button 
               type="submit" 
               className="glow-btn" 
