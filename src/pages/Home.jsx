@@ -238,12 +238,6 @@ export default function Home() {
     };
   }, []);
 
-  const handleScrollDown = () => {
-    window.scrollTo({
-      top: window.innerHeight * 0.8,
-      behavior: 'smooth',
-    });
-  };
 
   return (
     <div style={{ position: 'relative', minHeight: '90vh', width: '100%' }}>
@@ -328,17 +322,6 @@ export default function Home() {
 
       </div>
 
-      {/* Bouncing scroll indicator */}
-      <div 
-        className="chevron-container bounce-chevron" 
-        onClick={handleScrollDown}
-        style={{ fontFamily: "'Share Tech Mono', monospace", textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '1px' }}
-      >
-        Scroll
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'block', margin: '4px auto 0' }}>
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
-      </div>
     </div>
   );
 }
