@@ -38,6 +38,21 @@ export default function Portfolio() {
       live: 'https://ansh-v10.github.io/PitWall/'
     },
     {
+      title: 'Sanjay Sales',
+      description: 'A premium wholesale B2B e-commerce storefront and administrative control desk featuring tiered bulk pricing sheets, tax-compliant GST input credit claiming, and inventory management.',
+      category: 'React',
+      tags: ['React', 'React Router', 'B2B Wholesale', 'E-commerce', 'Vite'],
+      icon: (
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 8V21H3V8" />
+          <path d="M1 3H23V8H1V3Z" />
+          <path d="M10 12H14" strokeWidth="2" />
+        </svg>
+      ),
+      github: 'https://github.com/ansh-v10/SanjaySales',
+      live: 'https://ansh-v10.github.io/SanjaySales/'
+    },
+    {
       title: 'Cap-Stoner',
       description: 'A comprehensive Capstone Web Application built during Semester 1, showcasing clean layout execution, interactive elements, and frontend styling.',
       category: 'UI & CSS',
