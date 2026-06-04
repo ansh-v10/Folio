@@ -38,7 +38,7 @@ export default function Portfolio() {
       live: 'https://ansh-v10.github.io/PitWall/'
     },
     {
-      title: 'Sanjay Sales',
+      title: 'Tradevia',
       description: 'A premium wholesale B2B e-commerce storefront and administrative control desk featuring tiered bulk pricing sheets, tax-compliant GST input credit claiming, and inventory management.',
       category: 'React',
       tags: ['React', 'React Router', 'B2B Wholesale', 'E-commerce', 'Vite'],
@@ -49,8 +49,8 @@ export default function Portfolio() {
           <path d="M10 12H14" strokeWidth="2" />
         </svg>
       ),
-      github: 'https://github.com/ansh-v10/SanjaySales',
-      live: 'https://ansh-v10.github.io/SanjaySales/'
+      github: 'https://github.com/ansh-v10/Tradevia',
+      live: 'https://ansh-v10.github.io/Tradevia/'
     },
     {
       title: 'Cap-Stoner',
