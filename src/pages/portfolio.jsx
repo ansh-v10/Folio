@@ -38,6 +38,21 @@ export default function Portfolio() {
       live: 'https://ansh-v10.github.io/PitWall/'
     },
     {
+      title: 'Equity Pulse',
+      description: 'A professional financial dashboard built during my internship at Zetheta, offering real-time market tracking, stock analytics, and interactive data visualization.',
+      category: 'React',
+      tags: ['React', 'Next.js', 'Fintech', 'Charts', 'Internship'],
+      icon: (
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M2 12h3l2.5-7 3.5 14 3-10 2 6 2-3h7" />
+          <path d="M14 6h4v4" style={{ opacity: 0.7 }} />
+          <path d="M8 16l6-6 4 4" strokeDasharray="2 2" style={{ opacity: 0.5 }} />
+        </svg>
+      ),
+      github: 'https://github.com/ZethetaIntern/EquityPulse',
+      live: 'https://equity-chi.vercel.app'
+    },
+    {
       title: 'Tradevia',
       description: 'A premium wholesale B2B e-commerce storefront and administrative control desk featuring tiered bulk pricing sheets, tax-compliant GST input credit claiming, and inventory management.',
       category: 'React',
