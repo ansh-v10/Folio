@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import cozyDesk from '../assets/cozy_desk_pixel_art.png';
-
+import cozyDeskDark from '../assets/cozy_desk_dark.png';
+import cozyDeskLight from '../assets/cozy_desk_light.png';
 // Antigravity Canvas Sub-component
 function AntigravityCanvas() {
   const canvasRef = useRef(null);
@@ -214,6 +214,22 @@ export default function Home() {
   const navigate = useNavigate();
   const [rightVisible, setRightVisible] = useState(false);
   const rightRef = useRef(null);
+  const [isLightMode, setIsLightMode] = useState(() => 
+    document.body.classList.contains('light-theme')
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsLightMode(document.body.classList.contains('light-theme'));
+    });
+
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -313,7 +329,7 @@ export default function Home() {
         >
           <div className="retro-image-container">
             <img 
-              src={cozyDesk} 
+              src={isLightMode ? cozyDeskLight : cozyDeskDark} 
               alt="Cozy Retro Workspace Setup" 
               className="retro-pixel-image" 
             />
