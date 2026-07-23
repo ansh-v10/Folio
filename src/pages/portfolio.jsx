@@ -53,6 +53,20 @@ export default function Portfolio() {
       live: 'https://equity-chi.vercel.app'
     },
     {
+      title: 'LendSwift',
+      description: 'A digital lending platform and loan application portal built during my internship at Zetheta Algorithms, featuring a multi-step user onboarding flow, credit calculation widgets, and interactive interest estimation tools.',
+      category: 'React',
+      tags: ['React', 'Fintech', 'Multi-step Form', 'Internship'],
+      icon: (
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 3v18M16 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7" />
+          <path d="M17 12h5m0 0l-3-3m3 3l-3 3" strokeWidth="2" style={{ opacity: 0.8 }} />
+        </svg>
+      ),
+      github: 'https://github.com/ansh-v10/LendSwift',
+      live: 'https://loan-beta-two.vercel.app/#/step/1'
+    },
+    {
       title: 'Tradevia',
       description: 'A premium wholesale B2B e-commerce storefront and administrative control desk featuring tiered bulk pricing sheets, tax-compliant GST input credit claiming, and inventory management.',
       category: 'React',
