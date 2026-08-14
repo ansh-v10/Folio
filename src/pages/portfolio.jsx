@@ -67,6 +67,22 @@ export default function Portfolio() {
       live: 'https://loan-beta-two.vercel.app/#/step/1'
     },
     {
+      title: 'Meridian Capital',
+      description: 'A high-fidelity investment portfolio dashboard built during my internship at Zetheta, featuring asset allocation charts, real-time capital growth tracking, and financial performance telemetry.',
+      category: 'React',
+      tags: ['React', 'Next.js', 'Fintech', 'Investment Dashboard', 'Internship'],
+      icon: (
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" style={{ opacity: 0.5 }} />
+          <path d="M2 12h20M12 2v20" style={{ opacity: 0.5 }} />
+          <path d="M16 8l-4 4-3-3-4 4" strokeWidth="2" />
+        </svg>
+      ),
+      github: 'https://github.com/ZethetaIntern/MeridianCapital',
+      live: 'https://meridian-capital-dashboard-lime.vercel.app/'
+    },
+    {
       title: 'Tradevia',
       description: 'A premium wholesale B2B e-commerce storefront and administrative control desk featuring tiered bulk pricing sheets, tax-compliant GST input credit claiming, and inventory management.',
       category: 'React',
