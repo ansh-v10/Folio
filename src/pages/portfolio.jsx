@@ -38,6 +38,21 @@ export default function Portfolio() {
       live: 'https://ansh-v10.github.io/PitWall/'
     },
     {
+      title: 'EduForge',
+      description: 'A low-code financial page builder featuring a drag-and-drop block reorder editor, responsive viewport live previews, real-time interactive calculators, and full JSON schema import/export validation.',
+      category: 'React',
+      tags: ['React', 'Next.js', 'Fintech', 'Drag-and-Drop', 'Page Builder'],
+      icon: (
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 22V4c0-.5.5-1 1-1h4c.5 0 1 .5 1 1v18M14 22V10c0-.5.5-1 1-1h4c.5 0 1 .5 1 1v18" />
+          <path d="M10 7h4" />
+          <path d="M2 17l6-6 4 4 10-10m0 0h-4m4 0v4" strokeWidth="2" />
+        </svg>
+      ),
+      github: 'https://github.com/ansh-v10/EduForge',
+      live: 'https://eduforge-financial-builder.vercel.app/'
+    },
+    {
       title: 'Equity Pulse',
       description: 'A professional financial dashboard built during my internship at Zetheta, offering real-time market tracking, stock analytics, and interactive data visualization.',
       category: 'React',
